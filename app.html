@@ -7,7 +7,16 @@
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
-<h1>My App</h1>
+<h1>Single Page Application Layout Demo</h1>
+
+<hr>
+
+<ul>
+    <li>body and html element streching full height</li>
+    <li>Using Flexbox to layout all childs of the body element vertically</li>
+    <li>No owverflow, no scrollbars</li>
+    <li>Using Grind for the central 3x3 row/ column part</li>
+</ul>
 <script type=module>
     console.log("*** inline JavaScript ***");
     onload = () => {
@@ -27,17 +36,17 @@
 
     <!-- first row -->
     <div class="top">
-        <button>TOP</button>
+        <button>TOP</button>            <!-- col 1 - 3 -->
     </div>
    
     <!-- second row -->
-    <div><button>LEFT</button></div>      <!-- col 1-->
-    <div class="centered">5</div>         <!-- col 2-->
-    <div><button>RIGHT</button></div>     <!-- col 3-->
+    <div><button>LEFT</button></div>    <!-- col 1-->
+    <div class="centered">Hover over the buttons!</div>       <!-- col 2-->
+    <div><button>RIGHT</button></div>   <!-- col 3-->
 
     <!-- third row -->
     <div class="bottom">
-        <button>BOTTOM</button>
+        <button>BOTTOM</button>         <!-- col 1 - 3 -->
     </div>
 
 </div>
