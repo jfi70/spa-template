@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Demo</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<h1>My App</h1>
+<script type=module>
+    console.log("*** inline JavaScript ***");
+    onload = () => {
+        console.log("*** loaded ***");
+
+        /*
+        Array.from(document.querySelectorAll("button")).forEach(button => {
+            button.addEventListener('click', event => {
+                event.target.classList.toggle('collapsed');
+            });
+        });   
+        */
+    }
+</script>    
+
+<div class="grid-container">
+
+    <!-- first row -->
+    <div class="top">
+        <button>TOP</button>
+    </div>
+   
+    <!-- second row -->
+    <div><button>LEFT</button></div>      <!-- col 1-->
+    <div class="centered">5</div>         <!-- col 2-->
+    <div><button>RIGHT</button></div>     <!-- col 3-->
+
+    <!-- third row -->
+    <div class="bottom">
+        <button>BOTTOM</button>
+    </div>
+
+</div>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus vitae unde ex ab minima. Incidunt aspernatur error quis, obcaecati dolor minus officiis ipsam, corrupti iste natus dolorum repellendus rem repudiandae?</p>
+</body>
+</html>
