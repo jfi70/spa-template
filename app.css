@@ -4,9 +4,8 @@
     --target-button-padding: 50px;
 }
 
-
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; /* not default but essential */
 }
 
 html, body {
@@ -16,7 +15,7 @@ html, body {
 }
 
 body {
-    display: flex;
+    display: flex;      /* whole content of this page is treated as flex-childs */
     flex-flow: column;
     padding: 5px;
 
@@ -24,13 +23,12 @@ body {
 }
 
 hr {
-    width: 100%;
+    width: 100%; /* was not shown anymore when displayed as a flex-child of body */
 }
 
 /* Grid container */
 
 .grid-container {
-   
     height: 100%;
     border: 1px solid greenyellow;
 
