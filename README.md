@@ -13,3 +13,6 @@
 
 * CSS centering:
   - https://css-tricks.com/centering-css-complete-guide/
+
+* Safari compat overscroll supression
+  - https://www.bram.us/2016/05/02/prevent-overscroll-bounce-in-ios-mobilesafari-pure-css/
